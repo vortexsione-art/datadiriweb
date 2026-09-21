@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Data Diri - Ahmad Maulana</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            min-height: 100vh;
+            background: linear-gradient(135deg, #0f172a, #1e3a8a);
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 30px;
+        }
+
+        .container {
+            width: 900px;
+            max-width: 100%;
+            background: rgba(255, 255, 255, 0.08);
+            backdrop-filter: blur(15px);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            border-radius: 25px;
+            overflow: hidden;
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4);
+        }
+
+        /* HEADER */
+        .header {
+            text-align: center;
+            padding: 45px 20px;
+            background: linear-gradient(135deg, #2563eb, #06b6d4);
+        }
+
+        .foto {
+            width: 120px;
+            height: 120px;
+            margin: auto;
+            border-radius: 50%;
+            background: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 50px;
+            color: #2563eb;
+            border: 5px solid rgba(255,255,255,0.5);
+        }
+
+        .header h1 {
+            margin-top: 20px;
+            font-size: 35px;
+        }
+
+        .header p {
+            margin-top: 8px;
+            opacity: 0.9;
+        }
+
+        /* CONTENT */
+        .content {
+            padding: 35px;
+        }
+
+        .judul {
+            color: #38bdf8;
+            margin-bottom: 20px;
+            font-size: 24px;
+        }
+
+        .data {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+        }
+
+        .item {
+            background: rgba(255,255,255,0.07);
+            padding: 18px;
+            border-radius: 15px;
+            border: 1px solid rgba(255,255,255,0.08);
+            transition: 0.3s;
+        }
+
+        .item:hover {
+            transform: translateY(-5px);
+            background: rgba(56,189,248,0.15);
+        }
+
+        .item span {
+            display: block;
+            color: #94a3b8;
+            font-size: 13px;
+            margin-bottom: 7px;
+        }
+
+        .item strong {
+            font-size: 17px;
+        }
+
+        /* DETAIL */
+        .detail {
+            margin-top: 35px;
+        }
+
+        .detail-box {
+            background: rgba(255,255,255,0.07);
+            padding: 25px;
+            border-radius: 18px;
+            line-height: 1.8;
+        }
+
+        .tag {
+            display: inline-block;
+            padding: 8px 14px;
+            margin: 5px;
+            background: #2563eb;
+            border-radius: 20px;
+            font-size: 14px;
+        }
+
+        /* FOOTER */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: rgba(0,0,0,0.2);
+            color: #94a3b8;
+            font-size: 14px;
+        }
+
+        /* RESPONSIVE */
+        @media (max-width: 650px) {
+            .data {
+                grid-template-columns: 1fr;
+            }
+
+            .header h1 {
+                font-size: 28px;
+            }
+
+            .content {
+                padding: 25px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- HEADER -->
+        <div class="header">
+
+            <div class="foto">
+                👨‍💻
+            </div>
+
+            <h1>Ahmad Maulana</h1>
+
+            <p>Pelajar • Web Developer Pemula • RPL</p>
+
+        </div>
+
+
+        <!-- DATA DIRI -->
+        <div class="content">
+
+            <h2 class="judul">📋 Data Diri</h2>
+
+            <div class="data">
+
+                <div class="item">
+                    <span>Nama</span>
+                    <strong>Ahmad Maulana</strong>
+                </div>
+
+                <div class="item">
+                    <span>Sekolah</span>
+                    <strong>SMKN 1 PKY</strong>
+                </div>
+
+                <div class="item">
+                    <span>Kelas</span>
+                    <strong>10 RPL-1</strong>
+                </div>
+
+                <div class="item">
+                    <span>Jurusan</span>
+                    <strong>Rekayasa Perangkat Lunak</strong>
+                </div>
+
+                <div class="item">
+                    <span>Status</span>
+                    <strong>Pelajar</strong>
+                </div>
+
+                <div class="item">
+                    <span>Bidang yang Dipelajari</span>
+                    <strong>Web Development</strong>
+                </div>
+
+            </div>
+
+
+            <!-- DETAIL TAMBAHAN -->
+            <div class="detail">
+
+                <h2 class="judul">✨ Tentang Saya</h2>
+
+                <div class="detail-box">
+
+                    <p>
+                        Halo! Saya <b>Ahmad Maulana</b>, seorang siswa
+                        SMKN 1 PKY dari jurusan Rekayasa Perangkat Lunak.
+                        Saya tertarik dengan dunia teknologi, pemrograman,
+                        dan pembuatan website.
+                    </p>
+
+                    <br>
+
+                    <p>
+                        Saya sedang belajar bagaimana membuat website
+                        menggunakan HTML, CSS, dan JavaScript serta
+                        mengembangkan kemampuan saya di bidang teknologi.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- HOBI -->
+            <div class="detail">
+
+                <h2 class="judul">🎯 Hobi & Minat</h2>
+
+                <div class="detail-box">
+
+                    <span class="tag">💻 Coding</span>
+                    <span class="tag">🎮 Gaming</span>
+                    <span class="tag">🎧 Musik</span>
+                    <span class="tag">🌐 Teknologi</span>
+
+                </div>
+
+            </div>
+
+
+            <!-- CITA-CITA -->
+            <div class="detail">
+
+                <h2 class="judul">🚀 Cita-Cita</h2>
+
+                <div class="detail-box">
+
+                    <p>
+                        Menjadi seorang programmer atau web developer
+                        yang mampu membuat aplikasi dan website
+                        yang bermanfaat bagi banyak orang.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- MOTTO -->
+            <div class="detail">
+
+                <h2 class="judul">💡 Motto</h2>
+
+                <div class="detail-box">
+
+                    <p>
+                        <i>
+                            "Belajar hari ini, menjadi lebih baik
+                            di hari esok."
+                        </i>
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- FOOTER -->
+        <footer>
+            © 2026 Ahmad Maulana | Website Data Diri
+        </footer>
+
+    </div>
+
+</body>
+</html>
